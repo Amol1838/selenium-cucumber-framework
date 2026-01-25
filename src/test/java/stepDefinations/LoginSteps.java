@@ -46,6 +46,16 @@ public class LoginSteps {
     public void verifyLogin() {
     	Assert.assertTrue(productsPage.isProductsPageDisplayed());
     }
+    
+    @When("User enters invalid credentials")
+    public void enter_invalid_credentials() {
+    	loginPage.login("standard_user11", "secret_sauc4e");
+    }
+    
+    @Then("Error message should be displayed")
+    public void errorMessgae_displayed() {
+    	Assert.assertTrue(loginPage.isErrorDisplayed());
+    }
 	
 
 }

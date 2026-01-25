@@ -17,3 +17,9 @@ Scenario Outline: Login with multiple users
     | username | password | expectedResult |
     | standard_user    | secret_sauce    | success          |
     | locked_out_user    | secret_sauce    | failure          |
+    
+    
+Scenario: Login with invalid credentials
+  Given User is on SauceDemo login page
+  When User enters invalid credentials
+  Then Error message should be displayed

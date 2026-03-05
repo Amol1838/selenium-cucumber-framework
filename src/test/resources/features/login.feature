@@ -1,7 +1,7 @@
 Feature: Login Functionality
 
 # Login feature for SauceDemo application
-
+//
 Scenario: Valid login test
   Given User is on SauceDemo login page
   When User enters valid credentials

@@ -1,5 +1,5 @@
 Feature: Login Functionality
-//
+
 # Login feature for SauceDemo application
 
 Scenario: Valid login test
